@@ -1,0 +1,27 @@
+{
+    "name": "div-art/fbreviews",
+    "type": "comopser-plugin",
+    "license": "MIT",
+    "minimum-stability": "alpha",
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DivArt\\ShortLink\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DivArt\\FBReviews\\FBReviewsServiceProvider"
+            ],
+            "aliases": {
+                "ShortLink": "DivArt\\FBReviews\\Facades\\FBReviews"
+            }
+        }
+    }
+}
